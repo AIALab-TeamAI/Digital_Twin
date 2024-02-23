@@ -1,2 +1,2 @@
 # Digital_Twin
-Build a Dgital Twin in Robotics
+Build a Digital Twin in Robotics
