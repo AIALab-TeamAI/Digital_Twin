@@ -41,8 +41,7 @@ Download URDF-Importer:https://github.com/Unity-Technologies/URDF-Importer.git?p
 1.1 ROS IP Address: 192.168.0.103  (theo địa chỉ máy)  
 1.2 ROS Port: 10000  
 
-![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/e81e551d-1bfe-42ea-8dbf-d7bb6cb3064c)
-
+![Screenshot from 2024-03-12 20-07-48](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/6b23e85c-dfdd-4998-9e79-16690597758c)
 
 8. Chọn GameObject> Create Empty> ROS Connection (chỉnh ip:192.168.0.103).  
 Vào Robotics> Generate ROS Message> ROS message path (chỉnh tới thư mục unity_robotics_demo_msgs)> msg(Build 2 msgs) và srv(Build 2 srvs).  
