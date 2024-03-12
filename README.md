@@ -7,7 +7,7 @@ Build a Digital Twin in Robotics
     • Phiên bản Ros: Rosnoetic.
     • Phiên bản Unity3d: 2021.3.18f1.
 
-1. Tạo một thư mục để chạy ros ví dụ một thư mục có tên là: “ros_ws”  
+1. Tạo một thư mục để chạy ros ví dụ một thư mục có tên là: “ros_ws”:  
 * mkdir -p ~/ros_ws/src  
 * cd ros_ws  
 * catkin_make  
@@ -15,7 +15,7 @@ Build a Digital Twin in Robotics
 * catkin_create_pkg  
 
 2. Tạo một không gian trong unity3d và thêm 2 thư viện github của URDF-Importer (version 0.5.2) và ROS-TCP-Connector (version 0.7.0) như sau: vào mục Window > Package Manager> Add package from git URL> dán link> Add.  
-Download URDF-Importer:https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer và ROS-TCP-Connector: https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
+Download URDF-Importer:https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer và ROS-TCP-Connector: https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector.
 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/4f9ddee4-d726-4b5b-9673-b086d2a9f5a0)
 
@@ -23,7 +23,7 @@ Download URDF-Importer:https://github.com/Unity-Technologies/URDF-Importer.git?p
 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/19e32def-18ea-4ca2-818a-713a9f67b1ca)
 
-4. Tải 3 thư mục unity_robotics_demo, unity_robotics_demo_msgs(https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main/tutorials/ros_unity_integration/ros_packages) và ROS-TCP-Endpoint(https://github.com/Unity-Technologies/ROS-TCP-Endpoint) đặt trong thư mục ros_ws>src
+4. Tải 3 thư mục unity_robotics_demo, unity_robotics_demo_msgs(https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main/tutorials/ros_unity_integration/ros_packages) và ROS-TCP-Endpoint(https://github.com/Unity-Technologies/ROS-TCP-Endpoint) đặt trong thư mục ros_ws>src.
 
 5. Vào termino:  
 * cd ros_ws  
@@ -38,14 +38,14 @@ Download URDF-Importer:https://github.com/Unity-Technologies/URDF-Importer.git?p
 * hostname -I
 
 7. Vào Unity3D> Robotics> ROS SETTING:  
--ROS IP Address: 192.168.0.103  (theo địa chỉ máy)  
--ROS Port: 10000  
+1.1 ROS IP Address: 192.168.0.103  (theo địa chỉ máy)  
+1.2 ROS Port: 10000  
 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/82360f19-b0d5-462a-9e03-46f5580478c5)
 
 
-8. Chọn GameObject> Create Empty> ROS Connection (chỉnh ip:192.168.0.103
-Vào Robotics> Generate ROS Message> ROS message path (chỉnh tới thư mục unity_robotics_demo_msgs)> msg(Build 2 msgs) và srv(Build 2 srvs)  .
+8. Chọn GameObject> Create Empty> ROS Connection (chỉnh ip:192.168.0.103).  
+Vào Robotics> Generate ROS Message> ROS message path (chỉnh tới thư mục unity_robotics_demo_msgs)> msg(Build 2 msgs) và srv(Build 2 srvs).  
 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/3cb0460f-40cb-4b63-a09c-d6610fbee6f1)  
 
