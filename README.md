@@ -7,13 +7,12 @@ Build a Digital Twin in Robotics
     • Phiên bản Ros: Rosnoetic.
     • Phiên bản Unity3d: 2021.3.18f1.
 
-1. Tạo một thư mục để chạy ros ví dụ một thư mục có tên là: “ros_ws”
-
-mkdir -p ~/ros_ws/src
-cd ros_ws
-catkin_make
-cd src
-catkin_create_pkg
+1. Tạo một thư mục để chạy ros ví dụ một thư mục có tên là: “ros_ws”  
+mkdir -p ~/ros_ws/src  
+cd ros_ws  
+catkin_make  
+cd src  
+catkin_create_pkg  
 
 2. Tạo một không gian trong unity3d và thêm 2 thư viện github của URDF-Importer (version 0.5.2) và ROS-TCP-Connector (version 0.7.0) như sau:
 vào mục Window > Package Manager> Add package from git URL> dán link> Add.
