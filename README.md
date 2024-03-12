@@ -41,7 +41,7 @@ Download URDF-Importer:https://github.com/Unity-Technologies/URDF-Importer.git?p
 1.1 ROS IP Address: 192.168.0.103  (theo địa chỉ máy)  
 1.2 ROS Port: 10000  
 
-![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/82360f19-b0d5-462a-9e03-46f5580478c5)
+![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/e81e551d-1bfe-42ea-8dbf-d7bb6cb3064c)
 
 
 8. Chọn GameObject> Create Empty> ROS Connection (chỉnh ip:192.168.0.103).  
