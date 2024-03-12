@@ -7,7 +7,8 @@ Build a Digital Twin in Robotics
     • Phiên bản Ros: Rosnoetic.
     • Phiên bản Unity3d: 2021.3.18f1.
 
-1. Tạo một thư mục để chạy ros ví dụ một thư mục có tên là: “ros_ws” 
+1. Tạo một thư mục để chạy ros ví dụ một thư mục có tên là: “ros_ws”
+
 mkdir -p ~/ros_ws/src
 cd ros_ws
 catkin_make
