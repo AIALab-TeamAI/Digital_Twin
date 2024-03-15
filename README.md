@@ -1,6 +1,6 @@
 # Digital_Twin
 Build a Digital Twin in Robotics
-# I. Seutp ROS, Uniy env
+# I. Seutp ROS, Unity env
 ## Kết nối Ros Noetic với Unity3d
 
     • Phiên bản Ubuntu: 20.04.06 LST.
