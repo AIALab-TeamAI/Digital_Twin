@@ -1,4 +1,4 @@
-# Digital_Twin
+# Digital_Twin 
 Build a Digital Twin in Robotics
 # I. Seutp ROS, Unity env
 ## Kết nối Ros Noetic với Unity3d
@@ -68,3 +68,5 @@ Kết quả:
 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/8d27bfc6-4aa6-426b-b710-026b49d21417)
 
+# References
+ 1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
