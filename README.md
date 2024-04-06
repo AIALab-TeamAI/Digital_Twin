@@ -79,35 +79,8 @@ Kết quả:
 * git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint  
 * cd ..  
 * catkin_make  
-2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:
-[Upload<launch>
-  <arg name="db" default="false" />
-  <arg name="db_path" default="$(find ur10e_moveit_config)/default_warehouse_mongo_db" />
-  <arg name="debug" default="false" />
-  <arg name="load_robot_description" default="true"/>
-  <arg name="use_gui" default="false" />
-  <include file="$(find ur10e_moveit_config)/launch/planning_context.launch">
-    <arg name="load_robot_description" value="true"/>
-  </include>
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg use_gui)">
-    <rosparam param="source_list">[move_group/fake_controller_joint_states]</rosparam>
-  </node>
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
-  <include file="$(find ur10e_moveit_config)/launch/move_group.launch">
-    <arg name="allow_trajectory_execution" value="true"/>
-    <arg name="fake_execution" value="true"/>
-    <arg name="info" value="true"/>
-    <arg name="debug" value="$(arg debug)"/>
-  </include>
-  <include file="$(find ur10e_moveit_config)/launch/moveit_rviz.launch">
-    <arg name="config" value="$(find ur10e_moveit_config)/launch/moveit.rviz"/>
-    <arg name="debug" value="$(arg debug)"/>
-  </include>
-  <include file="$(find ur10e_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
-    <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
-  </include>
-</launch>
-ing ur10e.launch…]()
+2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:  
+https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/ur10e.launch  
 
 3. Chay thử thư mục:   
 * cd ros_ws  
@@ -116,6 +89,12 @@ ing ur10e.launch…]()
 4. Kết quả:   
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/f5e89cb8-5fa6-41f2-9488-34aba36fb2eb)  
 
+5. Tải và chạy file unity3d của a Tri:  
+https://github.com/TriKnight/UR_ROS_Unity/  
+![Screenshot from 2024-04-06 11-10-06](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/6ec9df99-50fa-44c1-8b8e-7d27bf7118bb)  
+
+6. Tạo một file C# trong unity3d có tên là "myCobot280M5Controller" và gắn các khớp vào như hình:
+*file myCobot280M5Controller: *  
 
 # References
  1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
