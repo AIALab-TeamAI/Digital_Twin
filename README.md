@@ -1,6 +1,6 @@
 # Digital_Twin 
 Build a Digital Twin in Robotics
-# I. Seutp ROS, Unity env
+# I. Seutup ROS, Unity env
 ## Kết nối Ros Noetic với Unity3d
 
     • Phiên bản Ubuntu: 20.04.06 LST.
@@ -67,6 +67,54 @@ Link code:https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tut
 Kết quả:
 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/8d27bfc6-4aa6-426b-b710-026b49d21417)
+
+# II.Setup Rviz, Unity
+## Kết nối Rviz với Ros
+1. Tạo thư mục kết nối Ros, ví dụ thư mục có tên là: "ros_ws"
+* mkdir -p ~/ros_ws/src  
+* cd ros_ws   
+* cd src
+* git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver.git src/Universal_Robots_ROS_Driver
+* git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git src/universal_robot
+* git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint
+* catkin_make
+2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:
+  [Up<launch>
+  <arg name="db" default="false" />
+  <arg name="db_path" default="$(find ur10e_moveit_config)/default_warehouse_mongo_db" />
+  <arg name="debug" default="false" />
+  <arg name="load_robot_description" default="true"/>
+  <arg name="use_gui" default="false" />
+  <include file="$(find ur10e_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg use_gui)">
+    <rosparam param="source_list">[move_group/fake_controller_joint_states]</rosparam>
+  </node>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+  <include file="$(find ur10e_moveit_config)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="fake_execution" value="true"/>
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  <include file="$(find ur10e_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="config" value="$(find ur10e_moveit_config)/launch/moveit.rviz"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  <include file="$(find ur10e_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
+    <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
+  </include>
+</launch>
+loading ur10e.launch…]()
+3. Chay thử thư mục:
+* cd ros_ws
+* source devel/setup.bash
+* roslaunch ur10e_moeit_config ur10e.launch
+4. Kết quả:
+![Screenshot from 2024-04-06 08-14-24](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/0d7694b7-21d5-43d3-b32b-9a9763132764)
+
+
 
 # References
  1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
