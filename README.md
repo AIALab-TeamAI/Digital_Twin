@@ -85,7 +85,7 @@ https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/ur10e.launch
 3. Chay thử thư mục:   
 * cd ros_ws  
 * source devel/setup.bash  
-* roslaunch ur10e_moeit_config ur10e.launch  
+* roslaunch ur10e_moveit_config ur10e.launch  
 4. Kết quả:   
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/f5e89cb8-5fa6-41f2-9488-34aba36fb2eb)  
 
@@ -93,8 +93,29 @@ https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/ur10e.launch
 https://github.com/TriKnight/UR_ROS_Unity/  
 ![Screenshot from 2024-04-06 11-10-06](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/6ec9df99-50fa-44c1-8b8e-7d27bf7118bb)  
 
-6. Tạo một file C# trong unity3d có tên là "myCobot280M5Controller" và gắn các khớp vào như hình:
-*file myCobot280M5Controller: *  
+6. Tạo một file C# trong unity3d có tên là "myCobot280M5Controller" và gắn các khớp vào như hình:  
+_file myCobot280M5Controller:_ https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/myCobot280M5Controller.cs  
+![Screenshot from 2024-04-06 11-18-53](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/2f290e37-c17b-495a-bd07-7a1116cfdd2d)
+
+7. Kết nối Unity3d với Ros:
+_Tương tự phần I._  
+
+8. Dùng Rviz để điều khiển Unity3d thông qua Ros:
+_Terminal 1_
+* cd ros_ws  
+* source devel/setup.bash  
+* roslaunch ur10e_moveit_config ur10e.launch
+_Terminal 2_
+* cd ros_ws  
+* source devel/setup.bash
+* roslaunch ros_tcp_endpoint endpoint.launch
+
+_Kết quả:_  
+
+[Screencast from  6 មេសា 2024 11:39:15.webm](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/07eb6ddd-54dc-4a40-ae61-4660efdd9a26)
+
+
+
 
 # References
  1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
