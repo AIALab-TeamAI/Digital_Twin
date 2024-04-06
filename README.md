@@ -79,7 +79,34 @@ Kết quả:
 * git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint  
 * cd ..  
 * catkin_make  
-2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:     
+2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:
+*<launch>
+  <arg name="db" default="false" />
+  <arg name="db_path" default="$(find ur10e_moveit_config)/default_warehouse_mongo_db" />
+  <arg name="debug" default="false" />
+  <arg name="load_robot_description" default="true"/>
+  <arg name="use_gui" default="false" />
+  <include file="$(find ur10e_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg use_gui)">
+    <rosparam param="source_list">[move_group/fake_controller_joint_states]</rosparam>
+  </node>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+  <include file="$(find ur10e_moveit_config)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="fake_execution" value="true"/>
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  <include file="$(find ur10e_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="config" value="$(find ur10e_moveit_config)/launch/moveit.rviz"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  <include file="$(find ur10e_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
+    <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
+  </include>
+*</launch>   
 3. Chay thử thư mục:   
 * cd ros_ws  
 * source devel/setup.bash  
