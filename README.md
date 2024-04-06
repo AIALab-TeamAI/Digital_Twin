@@ -100,11 +100,11 @@ _file myCobot280M5Controller:_ https://github.com/AIALab-TeamAI/Digital_Twin/blo
 7. Kết nối Unity3d với Ros:
 _Tương tự phần I._  
 
-8. Dùng Rviz để điều khiển Unity3d thông qua Ros:
+8. Dùng Rviz để điều khiển Unity3d thông qua Ros: 
 _Terminal 1_
 * cd ros_ws  
 * source devel/setup.bash  
-* roslaunch ur10e_moveit_config ur10e.launch
+* roslaunch ur10e_moveit_config ur10e.launch  
 _Terminal 2_
 * cd ros_ws  
 * source devel/setup.bash
