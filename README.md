@@ -80,7 +80,7 @@ Kết quả:
 * cd ..  
 * catkin_make  
 2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:
-*<launch>
+[Upload<launch>
   <arg name="db" default="false" />
   <arg name="db_path" default="$(find ur10e_moveit_config)/default_warehouse_mongo_db" />
   <arg name="debug" default="false" />
@@ -106,7 +106,9 @@ Kết quả:
   <include file="$(find ur10e_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
-*</launch>   
+</launch>
+ing ur10e.launch…]()
+
 3. Chay thử thư mục:   
 * cd ros_ws  
 * source devel/setup.bash  
