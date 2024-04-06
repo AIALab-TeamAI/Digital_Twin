@@ -70,7 +70,7 @@ Kết quả:
 
 # II.Setup Rviz, Unity
 ## Kết nối Rviz với Ros
-1. Tạo thư mục kết nối Ros, ví dụ thư mục có tên là: "ros_ws".
+1. Tạo thư mục kết nối Ros, ví dụ thư mục có tên là: "ros_ws" 
 * mkdir -p ~/ros_ws/src  
 * cd ros_ws   
 * cd src
@@ -79,7 +79,7 @@ Kết quả:
 * git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 * cd ..
 * catkin_make
-2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch:.
+2. Tạo một file ur10e.launch trong thư mục ros_ws>src>universal_robot>ur10e_moveit_config>launch: 
   [Up<launch>
   <arg name="db" default="false" />
   <arg name="db_path" default="$(find ur10e_moveit_config)/default_warehouse_mongo_db" />
@@ -108,11 +108,11 @@ Kết quả:
   </include>
 </launch>
 loading ur10e.launch…]()
-3. Chay thử thư mục:.
+3. Chay thử thư mục: 
 * cd ros_ws
 * source devel/setup.bash
 * roslaunch ur10e_moeit_config ur10e.launch
-4. Kết quả:.
+4. Kết quả: 
 ![image](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/f5e89cb8-5fa6-41f2-9488-34aba36fb2eb)
 
 
