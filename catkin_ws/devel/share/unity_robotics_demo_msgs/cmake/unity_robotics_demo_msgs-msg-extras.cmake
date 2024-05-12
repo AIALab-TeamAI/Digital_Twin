@@ -1,0 +1,2 @@
+set(unity_robotics_demo_msgs_MESSAGE_FILES "/home/rosunity/catkin_ws/src/unity_robotics_demo_msgs/msg/PosRot.msg;/home/rosunity/catkin_ws/src/unity_robotics_demo_msgs/msg/UnityColor.msg;/home/rosunity/catkin_ws/src/unity_robotics_demo_msgs/msg/Jointstep.msg")
+set(unity_robotics_demo_msgs_SERVICE_FILES "/home/rosunity/catkin_ws/src/unity_robotics_demo_msgs/srv/ObjectPoseService.srv;/home/rosunity/catkin_ws/src/unity_robotics_demo_msgs/srv/PositionService.srv")
