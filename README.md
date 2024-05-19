@@ -122,5 +122,40 @@ _Kết quả:_
 # III.Kết nối và điều khiển Robot thật thông qua Unity3D:
 ## Điều khiển thông qua phím ←↑↓→ trong Unity3d:  
 1. Tạo và setup như phần I.
-2. 
+2. Kết nối máy tính với robot thật.
+- Mở Wired Connected lên -> Wired Setting -> cài đặt -> IPv4 -> chổ Address và Netmask điều chỉnh phù hợp với robot thật
+![Screenshot from 2024-05-19 22-42-25](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/9351e5f1-1095-449a-82fc-4f23d42b6108)  
+- Kiểm tra đã kết nối được chưa bằng cách kiểm tra bằng lệnh ping:
+![Screenshot from 2024-05-19 22-51-08](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/51857d9a-638f-4eaa-8963-c2b8fcbf0661)
+3. Tạo file move_group_python_interface_tutorial.py tính hiệu để truyền từ Unity3D sang note và từ note điều khiển Robot UR10e.  
+[Uploading move_group_python_interface_tutorial.py…]()  
+4. Tạo các Terminal để chạy chương trình:
+  Terminal 1
+* cd ros_ws    
+* source devel/setup.bash  
+* roslaunch ur_robot_driver ur10e_bringup.launch robot_ip:=192.168.1.201  
+ Terminal 2
+* cd ros_ws    
+* source devel/setup.bash
+* roslaunch ur10e_moveit_config ur10e_moveit_planning_execution.launch limited:=true
+ Terminal 3
+* cd ros_ws    
+* source devel/setup.bash
+* roslaunch ros_tcp_endpoint endpoint.launch tcp_ip:=127.0.0.1 tcp_port:=10000
+ Terminal 4
+* cd ros_ws    
+* source devel/setup.bash
+* rosrun moveit_tutorials move_group_python_interface_tutorial.py
+Kết Quả:
+![Screenshot from 2024-05-19 23-55-32](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/4c1bb19c-898b-40ce-8748-e30b4f5a5608)  
+
+### Điều khiển thông qua Slider trong Unity3d:  
+1. Setup như Điều khiển thông qua phím ←↑↓→ trong Unity3d
+2. Tạo file c# để điều khiển các thanh Slider:  
+
+![Screenshot from 2024-05-19 23-47-49](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/e9a7927b-c508-41b4-a388-38b27b6525de)  
+3. Kết Quả:
+![Screenshot from 2024-05-19 23-57-39](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/940ac10e-313d-4d5e-b071-6374a104d297)
+
+
 
