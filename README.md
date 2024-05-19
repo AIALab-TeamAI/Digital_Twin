@@ -119,3 +119,8 @@ _Kết quả:_
 
 # References
  1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
+# III.Kết nối và điều khiển Robot thật thông qua Unity3D:
+## Điều khiển thông qua phím ←↑↓→ trong Unity3d:  
+1. Tạo và setup như phần I.
+2. 
+
