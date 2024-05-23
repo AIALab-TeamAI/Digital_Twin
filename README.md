@@ -127,7 +127,7 @@ _Kết quả:_
 - Kiểm tra đã kết nối được chưa bằng cách kiểm tra bằng lệnh ping:
 ![Screenshot from 2024-05-19 22-51-08](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/51857d9a-638f-4eaa-8963-c2b8fcbf0661)
 3. Tạo file move_group_python_interface_tutorial.py tính hiệu để truyền từ Unity3D sang note và từ note điều khiển Robot UR10e.  
-[Uploading move_group_python_interface_tutorial.py…]()  
+[Uploading move_group_python_interface_tutorial.py…](https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/move_group_python_interface_tutorial.py)  
 4. Tạo các Terminal để chạy chương trình:
   
   ### Terminal 1
@@ -154,15 +154,19 @@ _Kết quả:_
 * source devel/setup.bash
 * rosrun moveit_tutorials move_group_python_interface_tutorial.py
 Kết Quả:
-![Screenshot from 2024-05-19 23-55-32](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/4c1bb19c-898b-40ce-8748-e30b4f5a5608)  
+![Screenshot from 2024-05-19 23-55-32](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/4c1bb19c-898b-40ce-8748-e30b4f5a5608)
+
+Video kết quả:  
+
 
 ### Điều khiển thông qua Slider trong Unity3d:  
 1. Setup như Điều khiển thông qua phím ←↑↓→ trong Unity3d
-2. Tạo file c# để điều khiển các thanh Slider:  
+2. Tạo file c# để điều khiển các thanh Slider:  [file dieukhien.cs](https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/dieukhien.cs)  
 
 ![Screenshot from 2024-05-19 23-47-49](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/e9a7927b-c508-41b4-a388-38b27b6525de)  
 3. Kết Quả:
 ![Screenshot from 2024-05-19 23-57-39](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/940ac10e-313d-4d5e-b071-6374a104d297)
+Vieo kết quả:
 
 # References
 1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
