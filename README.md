@@ -181,6 +181,8 @@ Kết Quả:
 14. [MATLAB + UNITY + ROS](https://www.mathworks.com/help/robotics/ug/pick-and-place-workflow-in-unity-3d-using-ros.html)
 15. [Tutorials in ROS and Robotics](https://www.rosroboticslearning.com/)
 16. [Universal Robots Unity3D App](https://github.com/Grand-Garage/unity3d_universal_robot_build/tree/main).
-17. 
+17. [Unity3D Industrial Robotics: An Overview](https://github.com/rparak/Unity3D_Robotics_Overview?tab=readme-ov-file).
+18. [Unity3D Industrial Robotics: Universal Robots UR3](https://github.com/rparak/Unity3D_Robotics_UR)
+19. [Digital Twin of Anthropomorphic Robotic Arm using AR](https://github.com/yudhisteer/Digital-Twin-of-Anthropomorphic-Robotic-Arm).
 
 
