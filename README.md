@@ -152,7 +152,7 @@ _Kết quả:_
  
 * cd ros_ws    
 * source devel/setup.bash
-* rosrun moveit_tutorials move_group_python_interface_tutorial.py
+* rosrun moveit_tutorials move_group_python_interface_tutorial.py  
 Kết Quả:  
 ![Screenshot from 2024-05-19 23-55-32](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/4c1bb19c-898b-40ce-8748-e30b4f5a5608)
 
