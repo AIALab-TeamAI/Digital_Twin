@@ -153,10 +153,8 @@ _Kết quả:_
 * cd ros_ws    
 * source devel/setup.bash
 * rosrun moveit_tutorials move_group_python_interface_tutorial.py
-Kết Quả:
+Kết Quả:  
 ![Screenshot from 2024-05-19 23-55-32](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/4c1bb19c-898b-40ce-8748-e30b4f5a5608)
-
-Video kết quả:  
 
 
 ### Điều khiển thông qua Slider trong Unity3d:  
@@ -164,9 +162,9 @@ Video kết quả:
 2. Tạo file c# để điều khiển các thanh Slider:  [file dieukhien.cs](https://github.com/AIALab-TeamAI/Digital_Twin/blob/main/dieukhien.cs)  
 
 ![Screenshot from 2024-05-19 23-47-49](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/e9a7927b-c508-41b4-a388-38b27b6525de)  
-3. Kết Quả:
+3. Kết Quả:  
 ![Screenshot from 2024-05-19 23-57-39](https://github.com/AIALab-TeamAI/Digital_Twin/assets/144165491/940ac10e-313d-4d5e-b071-6374a104d297)
-Vieo kết quả:
+
 
 # References
 1. [Digital Twin - Robotics ](https://github.com/rparak/Unity3D_Robotics_Overview)
